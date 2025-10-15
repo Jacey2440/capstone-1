@@ -14,13 +14,13 @@ public class Capstone1 {
 
             switch (choice) {
                 case "D":
-                    addTransaction(true);
+//                    addTransaction(true);
                     break;
                 case "P":
-                    addTransaction(false);
+//                    addTransaction(false);
                     break;
                 case "L":
-                    showLedgerMenu();
+//                    showLedgerMenu();
                     break;
                 case "X":
                     System.out.println("Exiting now, Good bye!");
