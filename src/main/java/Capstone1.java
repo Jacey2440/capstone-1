@@ -4,7 +4,7 @@ public class Capstone1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         while (true) {
-            System.out.println("\n Home screen");
+            System.out.println(" Home screen");
             System.out.println("D) Add Deposit");
             System.out.println("P) Make Payment(Debit)");
             System.out.println("L) Ledger");
@@ -25,6 +25,9 @@ public class Capstone1 {
                 case "X":
                     System.out.println("Exiting now, Good bye!");
                     return;
+                default:
+                    System.out.println("Invalid, please try again ");
+
 
             }
         }
