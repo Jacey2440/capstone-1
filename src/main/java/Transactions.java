@@ -2,13 +2,17 @@ public class Transactions {
     private String date;
     private String description;
     private String vendor;
-    private double amount;
+    private String amount;
+    private String time;
+    private String type;
 
-    public Transactions(String date, String description, String vendor, double amount) {
+    public Transactions(String date, String description, String vendor, String amount,String time, String type) {
         this.date = date;
         this.description = description;
         this.vendor = vendor;
         this.amount = amount;
+        this.time = time;
+        this.type = type;
     }
 
     public String getDate() {
@@ -23,12 +27,16 @@ public class Transactions {
         return vendor;
     }
 
-    public double getAmount() {
+    public String getAmount() {
         return amount;
+    }
+
+    public String time(){
+        return time;
     }
 
     @Override
     public String toString() {
-        return String.format("%-12s %-15s %-15s %10.2f", date, description, vendor, amount);
+        return String.format(" %s |%s | %s | %s | %s | %s",type, date, description, vendor, amount, time);
     }
 }
