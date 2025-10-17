@@ -32,7 +32,7 @@ public class Capstone1 {
                     ledgerMenu(scanner);
                     break;
                 case "X":
-                    System.out.println("Exiting now, Good bye!");
+                    System.out.println("Exiting...");
                     return;
 
 
@@ -43,14 +43,13 @@ public class Capstone1 {
     }
 
     // Prompts user questions asking for inputs
-    private static void transaction(Scanner scanner, boolean isDeposit) {
+    private static void transaction(Scanner scanner, boolean deposit) {
         System.out.println("Enter description: ");
         String description = scanner.nextLine();
         System.out.println("Enter vendor: ");
         String vendor = scanner.nextLine();
         System.out.println("Enter amount: ");
         double amount = scanner.nextDouble();
-        //check up on this logic
 
         // input from user must be a double since it is money
 
@@ -61,7 +60,7 @@ public class Capstone1 {
         String finalAmount = null;
         String type = null;
         // Appending - to all transactions with payments
-        if (!isDeposit) {
+        if (!deposit) {
             finalAmount = "-" + amountString;
             type = "PAYMENT";
 
